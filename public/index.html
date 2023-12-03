@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    
+        <h1>Cars</h1>
+        
+        <div class = columns >
+            <div id="car-list"></div>
+            <div id="car-details"></div>
+        </div>
+
+    <div id="add-edit-car-container" class="dialog transparent">
+        
+        <form id="add-edit-car-form" method="post">
+            <input type="hidden" name="_id" value="-1" />
+            <p>
+                <label for="name ">Car Name:</label>
+                <input type="text" id="name" name="name" required />
+            </p>
+            <p>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required />
+            </p>
+
+            <p>
+                <label for="img">Upload Image:</label>
+                <input type="file" id="img" name="img" />
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </div>
+</body>
